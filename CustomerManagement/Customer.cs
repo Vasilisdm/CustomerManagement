@@ -8,7 +8,16 @@ namespace CustomerManagement
         {
             get
             {
-                return FirstName + " " + LastName;
+                string fullName = LastName;
+                if (!string.IsNullOrWhiteSpace(FirstName))
+                {
+                    if (!string.IsNullOrWhiteSpace(fullName))
+                    {
+                        fullName += ", ";
+                    }
+                    fullName += FirstName;
+                }
+                return fullName;
             }
         }
         public int CustomerId { get; set; }
