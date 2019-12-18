@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement", "CustomerManagement\CustomerManagement.csproj", "{BBDB036B-F38D-4579-8BF0-8FA7FFEF713D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBDB036B-F38D-4579-8BF0-8FA7FFEF713D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDB036B-F38D-4579-8BF0-8FA7FFEF713D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDB036B-F38D-4579-8BF0-8FA7FFEF713D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDB036B-F38D-4579-8BF0-8FA7FFEF713D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
