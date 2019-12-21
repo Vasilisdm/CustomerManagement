@@ -35,15 +35,9 @@ namespace CustomerManagement
         {
             bool isValid = true;
 
-            if (string.IsNullOrWhiteSpace(ProductName))
-            {
-                isValid = false;
-            }
+            if (string.IsNullOrWhiteSpace(ProductName)) isValid = false;
 
-            if (CurrentPrice == null)
-            {
-                isValid = false;
-            }
+            if (CurrentPrice == null)  isValid = false;
 
             return isValid;
         }
