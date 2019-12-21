@@ -36,27 +36,6 @@ namespace CustomerManagement
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public Customer Retrieve(int customerId)
-        {
-            // Retrieve provided customer, needs implementation
-
-            return new Customer();
-        }
-
-        public List<Customer> Retrieve()
-        {
-            // Retrieve all customers, needs implementation
-
-            return new List<Customer>();
-        }
-
-        public bool Save()
-        {
-            // Save customer, needs implementation
-
-            return true;
-        }
-
         public bool Validate()
         {
             var isValid = true;
