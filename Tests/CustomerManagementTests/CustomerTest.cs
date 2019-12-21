@@ -78,5 +78,41 @@ namespace CustomerManagementTests
             // Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void ValidateMissingLastName()
+        {
+            // Arrange
+            Customer customer = new Customer()
+            {
+                Email = "JDoe@gmail.com"
+            };
+
+            bool expected = false;
+
+            // Act
+            var actual = customer.Validate();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ValidateMissingEmail()
+        {
+            // Arrange
+            Customer customer = new Customer()
+            {
+                LastName = "Doe"
+            };
+
+            bool expected = false;
+
+            // Act
+            var actual = customer.Validate();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
