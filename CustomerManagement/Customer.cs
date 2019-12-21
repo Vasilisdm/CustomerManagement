@@ -30,7 +30,7 @@ namespace CustomerManagement
         {
             var isValid = true;
 
-            if (string.IsNullOrWhiteSpace(FirstName))
+            if (string.IsNullOrWhiteSpace(LastName))
             {
                 isValid = false;
             }
