@@ -33,10 +33,7 @@ namespace CustomerManagement
         {
             bool isValid = true;
 
-            if (OrderDate == null)
-            {
-                isValid = false;
-            }
+            if (OrderDate == null) isValid = false;
 
             return isValid;
         }
