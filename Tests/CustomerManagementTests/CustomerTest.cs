@@ -59,5 +59,24 @@ namespace CustomerManagementTests
             // Assert
             Assert.AreEqual(excpectedFullName, actualFullName);
         }
+
+        [Test]
+        public void ValidateValid()
+        {
+            // Arrange
+            Customer customer = new Customer()
+            {
+                LastName = "Doe",
+                Email = "JDoe@gmail.com"
+            };
+
+            bool expected = true;
+
+            // Act
+            var actual = customer.Validate();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
