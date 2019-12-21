@@ -40,15 +40,9 @@ namespace CustomerManagement
         {
             var isValid = true;
 
-            if (string.IsNullOrWhiteSpace(LastName))
-            {
-                isValid = false;
-            }
+            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
 
-            if (string.IsNullOrWhiteSpace(Email))
-            {
-                isValid = false;
-            }
+            if (string.IsNullOrWhiteSpace(Email)) isValid = false;
 
             return isValid;
         }
