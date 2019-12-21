@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace CustomerManagementTests
 {
-    public class CustomerTest
+    public class CustomerTests
     {
         [Test]
         public void FullNameTestValid()
