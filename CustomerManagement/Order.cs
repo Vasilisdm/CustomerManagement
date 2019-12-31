@@ -9,25 +9,11 @@ namespace CustomerManagement
 
         public Order(int orderId)
         {
-
+            OrderId = orderId;
         }
 
         public int OrderId { get; private set; }
         public DateTimeOffset? OrderDate { get; set; }
-
-        public Order Retrieve(int orderId)
-        {
-            // Retrieve provided order, needs implementation
-
-            return new Order();
-        }
-
-        public bool Save()
-        {
-            // save order, needs implementation
-
-            return true;
-        }
 
         public bool Validate()
         {
