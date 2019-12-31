@@ -17,20 +17,6 @@ namespace CustomerManagement
         public int ProductId { get; private set; }
         public string ProductName { get; set; }
 
-        public Product Retrieve(int productId)
-        {
-            // Retrieve defined product, needs implementation
-
-            return new Product();
-        }
-
-        public bool Save()
-        {
-            // Save product, needs implementation
-
-            return true;
-        }
-
         public bool Validate()
         {
             bool isValid = true;
