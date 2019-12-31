@@ -35,6 +35,7 @@ namespace CustomerManagement
 
         public List<Address> AddressList { get; set; }
         public int CustomerId { get; private set; }
+        public int CustomerType { get; set; }
         public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
