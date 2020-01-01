@@ -32,7 +32,7 @@ namespace CustomerManagement
                 return fullName;
             }
         }
-
+        public override string ToString() => FullName;
         public List<Address> AddressList { get; set; }
         public int CustomerId { get; private set; }
         public int CustomerType { get; set; }

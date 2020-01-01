@@ -14,7 +14,10 @@ namespace CustomerManagement
             OrderId = orderId;
             OrderItems = new List<OrderItem>();
         }
-
+        public override string ToString()
+        {
+            return $"{OrderDate.Value.Date} ({OrderId})";
+        }
         public int CustomerId { get; set; }
         public int ShippingAddress { get; set; }
         public List<OrderItem> OrderItems{ get; set; }
