@@ -46,7 +46,7 @@ namespace CustomerManagementTests
         }
 
         [Test]
-        public void SaveTestInvalid()
+        public void SaveTestMissingPrice()
         {
             // Arrange
             ProductRepository productRepository = new ProductRepository();
