@@ -23,8 +23,7 @@ namespace CustomerManagement
         {
             get
             {
-                StringHandler stringHandler = new StringHandler();
-                return stringHandler.InsertSpaces(_productName);
+                return StringHandler.InsertSpaces(_productName);
             }
             set
             {

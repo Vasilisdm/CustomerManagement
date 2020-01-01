@@ -11,10 +11,9 @@ namespace CommonTests
             // Arrange
             string initialString = "SonicScrewdriver";
             string expectedString = "Sonic Screwdriver";
-            StringHandler stringHandler = new StringHandler();
 
             // Act
-            string stringResult = stringHandler.InsertSpaces(initialString);
+            string stringResult = StringHandler.InsertSpaces(initialString);
 
             // Assert
             Assert.AreEqual(expectedString, stringResult);
@@ -26,10 +25,9 @@ namespace CommonTests
             // Arrange
             string initialString = "Sonic Screwdriver";
             string expectedString = "Sonic Screwdriver";
-            StringHandler stringHandler = new StringHandler();
 
             // Act
-            string stringResult = stringHandler.InsertSpaces(initialString);
+            string stringResult = StringHandler.InsertSpaces(initialString);
 
             // Assert
             Assert.AreEqual(expectedString, stringResult);

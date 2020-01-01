@@ -2,9 +2,9 @@
 
 namespace Common
 {
-    public class StringHandler
+    public static class StringHandler
     {
-        public string InsertSpaces(string inputString)
+        public static string InsertSpaces(string inputString)
         {
             string result = string.Empty;
 
