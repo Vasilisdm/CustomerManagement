@@ -1,4 +1,6 @@
 ﻿using System;
+using Common;
+
 namespace CustomerManagement
 {
     public class Product : EntityBase
@@ -15,7 +17,21 @@ namespace CustomerManagement
         public decimal? CurrentPrice { get; set; }
         public string ProductDescription { get; set; }
         public int ProductId { get; private set; }
-        public string ProductName { get; set; }
+
+        private string _productName;
+        public string ProductName
+        {
+            get
+            {
+                StringHandler stringHandler = new StringHandler();
+                return stringHandler.InsertSpaces(_productName);
+            }
+            set
+            {
+                _productName = value;
+            }
+        }
+
         public override string ToString() => ProductName;
 
         public override bool Validate()
