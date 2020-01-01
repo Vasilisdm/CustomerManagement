@@ -18,7 +18,7 @@ namespace CustomerManagement
         public string ProductName { get; set; }
         public override string ToString() => ProductName;
 
-        public bool Validate()
+        public override bool Validate()
         {
             bool isValid = true;
 
