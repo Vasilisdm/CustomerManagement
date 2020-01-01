@@ -2,9 +2,12 @@
 
 namespace Common
 {
+    /// <summary>
+    /// An extension method whichs adds spaces to a string when the first letter is upper case.
+    /// </summary>
     public static class StringHandler
     {
-        public static string InsertSpaces(string inputString)
+        public static string InsertSpaces(this string inputString)
         {
             string result = string.Empty;
 

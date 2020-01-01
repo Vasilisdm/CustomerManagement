@@ -13,7 +13,7 @@ namespace CommonTests
             string expectedString = "Sonic Screwdriver";
 
             // Act
-            string stringResult = StringHandler.InsertSpaces(initialString);
+            string stringResult = initialString.InsertSpaces();
 
             // Assert
             Assert.AreEqual(expectedString, stringResult);
@@ -27,7 +27,7 @@ namespace CommonTests
             string expectedString = "Sonic Screwdriver";
 
             // Act
-            string stringResult = StringHandler.InsertSpaces(initialString);
+            string stringResult = initialString.InsertSpaces();
 
             // Assert
             Assert.AreEqual(expectedString, stringResult);
