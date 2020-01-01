@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CustomerManagement
 {
-    public class Customer
+    public class Customer : EntityBase
     {
         public Customer() : this(0)
         {
@@ -40,7 +40,7 @@ namespace CustomerManagement
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 

@@ -30,8 +30,27 @@ namespace CustomerManagement
 
         public bool Save(Customer customer)
         {
-            // Dummy save method
-            return true;
+            bool success = true;
+
+            if (customer.HasChanges)
+            {
+                if (customer.IsValid)
+                {
+                    if (customer.IsNew)
+                    {
+                        // Call Insert stored procedure
+                    }
+                    else
+                    {
+                        // Call update stored procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
     }
 }

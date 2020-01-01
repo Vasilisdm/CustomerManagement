@@ -81,5 +81,65 @@ namespace CustomerManagementTests
                 Assert.AreEqual(customer.AddressList[i].PostalCode, actualCustomer.AddressList[i].PostalCode);
             }
         }
+
+        [Test]
+        public void SaveTestValid()
+        {
+            // Arrange
+            CustomerRepository customerRepo = new CustomerRepository();
+            Customer customer = new Customer()
+            {
+                Email = "Baggins@gmail.com",
+                FirstName = "Frodo",
+                LastName = "Baggins",
+                HasChanges = true
+            };
+
+            // Act
+            bool isCustomerSaved = customerRepo.Save(customer);
+
+            // Assert
+            Assert.AreEqual(true, isCustomerSaved);
+        }
+
+        [Test]
+        public void CustomerMissingEmail()
+        {
+            // Arrange
+            CustomerRepository customerRepo = new CustomerRepository();
+            Customer customer = new Customer()
+            {
+                Email = null,
+                FirstName = "Frodo",
+                LastName = "Baggins",
+                HasChanges = true
+            };
+
+            // Act
+            bool isCustomerSaved = customerRepo.Save(customer);
+
+            // Assert
+            Assert.AreEqual(false, isCustomerSaved);
+        }
+
+        [Test]
+        public void CustomerMissingLastName()
+        {
+            // Arrange
+            CustomerRepository customerRepo = new CustomerRepository();
+            Customer customer = new Customer()
+            {
+                Email = "Baggins@gmail.com",
+                FirstName = "Frodo",
+                LastName = null,
+                HasChanges = true
+            };
+
+            // Act
+            bool isCustomerSaved = customerRepo.Save(customer);
+
+            // Assert
+            Assert.AreEqual(false, isCustomerSaved);
+        }
     }
 }
