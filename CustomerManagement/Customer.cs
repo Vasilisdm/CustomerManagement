@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using Common;
 
 namespace CustomerManagement
 {
-    public class Customer : EntityBase
+    public class Customer : EntityBase, ILoggable
     {
         public Customer() : this(0)
         {
@@ -50,5 +51,7 @@ namespace CustomerManagement
 
             return isValid;
         }
+
+        public string Log() => $"{CustomerId} : {FullName} Email : {Email} Status : {EntityState.ToString()}";
     }
 }

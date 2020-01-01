@@ -3,7 +3,7 @@ using Common;
 
 namespace CustomerManagement
 {
-    public class Product : EntityBase
+    public class Product : EntityBase, ILoggable
     {
         public Product()
         {
@@ -42,6 +42,11 @@ namespace CustomerManagement
             if (CurrentPrice == null)  isValid = false;
 
             return isValid;
+        }
+
+        public string Log()
+        {
+            return $"{ProductId}: {ProductName} Detail: {ProductDescription} Status: {EntityState.ToString()}";
         }
     }
 }

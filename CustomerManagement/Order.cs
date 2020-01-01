@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using Common;
 
 namespace CustomerManagement
 {
-    public class Order : EntityBase
+    public class Order : EntityBase, ILoggable
     {
         public Order():this(0)
         {
@@ -31,6 +32,11 @@ namespace CustomerManagement
             if (OrderDate == null) isValid = false;
 
             return isValid;
+        }
+
+        public string Log()
+        {
+            return $"{OrderId}: Date: {OrderDate.Value.Date} Status: {EntityState.ToString()}";
         }
     }
 }
