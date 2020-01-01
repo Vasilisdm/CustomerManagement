@@ -16,11 +16,29 @@ namespace CustomerManagement
         }
 
 
-        public bool Save()
+        public bool Save(Order order)
         {
-            // dummy order save
+            bool success = true;
 
-            return true;
+            if (order.HasChanges)
+            {
+                if (order.IsValid)
+                {
+                    if (order.IsNew)
+                    {
+                        // Call Insert stored procedure
+                    }
+                    else
+                    {
+                        // Call update stored procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         } 
     }
 }

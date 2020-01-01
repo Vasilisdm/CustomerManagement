@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CustomerManagement
 {
-    public class Order
+    public class Order : EntityBase
     {
         public Order():this(0)
         {
@@ -24,7 +24,7 @@ namespace CustomerManagement
         public int OrderId { get; private set; }
         public DateTimeOffset? OrderDate { get; set; }
 
-        public bool Validate()
+        public override bool Validate()
         {
             bool isValid = true;
 
