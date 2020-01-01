@@ -20,9 +20,27 @@ namespace CustomerManagement
 
         public bool Save(Product product)
         {
-            // Dummy product store.
+            bool success = true;
 
-            return true;
+            if (product.HasChanges)
+            {
+                if (product.IsValid)
+                {
+                    if (product.IsNew)
+                    {
+                        // Call Insert stored procedure
+                    }
+                    else
+                    {
+                        // Call update stored procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
     }
 }
