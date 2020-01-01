@@ -14,12 +14,13 @@ namespace Common
                 {
                     if (char.IsUpper(letter))
                     {
+                        result = result.Trim();
                         result += " ";
                     }
                     result += letter;
                 }
             }
-            return result;
+            return result.Trim();
         }
     }
 }

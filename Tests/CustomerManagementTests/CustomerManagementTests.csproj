@@ -15,4 +15,28 @@
   <ItemGroup>
     <ProjectReference Include="..\..\CustomerManagement\CustomerManagement.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\Common.dll" />
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\Common.pdb" />
+    <None Remove="CommonTests\obj\CommonTests.csproj.nuget.dgspec.json" />
+    <None Remove="CommonTests\obj\Debug\netcoreapp2.2\CommonTests.assets.cache" />
+    <None Remove="CommonTests\obj\Debug\netcoreapp2.2\CommonTests.csprojAssemblyReference.cache" />
+    <None Remove="CommonTests\obj\Debug\netcoreapp2.2\CommonTests.AssemblyInfoInputs.cache" />
+    <None Remove="CommonTests\obj\Debug\netcoreapp2.2\CommonTests.dll" />
+    <None Remove="CommonTests\obj\Debug\netcoreapp2.2\CommonTests.pdb" />
+    <None Remove="CommonTests\obj\Debug\netcoreapp2.2\CommonTests.csproj.CopyComplete" />
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb" />
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll" />
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll" />
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\CommonTests.runtimeconfig.json" />
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\CommonTests.pdb" />
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\CommonTests.dll" />
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\CommonTests.runtimeconfig.dev.json" />
+    <None Remove="CommonTests\obj\Debug\netcoreapp2.2\CommonTests.csproj.FileListAbsolute.txt" />
+    <None Remove="CommonTests\bin\Debug\netcoreapp2.2\nunit_random_seed.tmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="CommonTests\UnitTest1.cs" />
+    <Compile Remove="CommonTests\obj\Debug\netcoreapp2.2\CommonTests.AssemblyInfo.cs" />
+  </ItemGroup>
 </Project>
