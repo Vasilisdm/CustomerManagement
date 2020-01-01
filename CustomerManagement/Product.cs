@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CustomerManagement
 {
-    public class Product
+    public class Product : EntityBase
     {
         public Product()
         {
